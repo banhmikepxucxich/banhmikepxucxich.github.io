@@ -1,68 +1,223 @@
 <!DOCTYPE html>
-  <head>
-      <title>hwoai's website</title>
-      <!--do Stylesheet shenanigans owo-->
-      <link rel="stylesheet" href="styles.css">
-      <script src="https://kit.fontawesome.com/752cc78466.js" crossorigin="anonymous"></script>
-  </head>
 
-  <body class="drop">
-    <!--Do very cool dropdown-->
-    <div>
+<head>
+    <link rel="icon" type="image/x-icon" href="./hawoi.jpeg">
+    <title>hawoi's page</title>
 
-      <div class="img-scroll-container"><div class="img-scroll"></div></div>
+    <script src="https://kit.fontawesome.com/752cc78466.js" crossorigin="anonymous"></script>
 
-      <div class="moveup mb-b">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=JetBrains+Mono:wght@300;400;700&display=swap');
 
-        <h1 class="title text mb">hi!, i'm <span class="name">hwoai</span> :D</h1>
-        <h2 class="text">eat sleep blockgame repeat!</h2>
+        body {
+            font-family: 'JetBrains Mono', sans-serif;
+            font-weight: 300;
 
-      </div>
+            margin: 0px;
+            padding: 0px;
 
-      <section class="moveup">
+            color: #293241  ;
+            background-color: white;
 
-        <h1 class="text underline">my projects</h1>
+            display: flex;
+            justify-content: center;
+        }
 
-        <li class="mt-s">
-          <img src="./res/css-export.png">
-          <img src="./res/html-export.png">
-          <a href="https://github.com/banhmikepxucxich/banhmikepxucxich.github.io">This website</a>
-        </li>
+        section {
+            padding: 0px 5vh 0px 5vh;
+        }
 
-        <li>
-          <img src="./res/python-export.png">
-          <img src="./res/css-export.png">
-          <a href="https://github.com/banhmikepxucxich/code-presenter">Code presenter</a>
-        </li>
+        h2 {
+            transform: translateY(-25px);
+            margin-bottom: -10px;
+        }
 
-        <li>
-          <img src="./res/python-export.png">
-          <a href="https://banhmikepxucxich.github.io/mc-pack-utils/">Minecraft pack making utilities</a>
-        </li>
+        h3 {
+            color: #98C1D9;
 
-        <h3 class="text message mt">
-          <img src="./res/python-export.png" class="icon">
-          python best language! (totally not biased)
-        </h2>
+            transform: translateY(-20px);
 
-      </section>
+            margin-bottom: -20px;
+        }
 
-      <section class="moveup socials">
+        img {
+            border-radius: 120px;
 
-        <h1 class="text underline">socials &amp; more :D</h1>
-        
-        <li class="mt-s">
-          <img src="./res/discord-export.png">
-          hawoi#0593
-        </li>
+            width: 15vh;
+            height: 15vh;
 
-        <li>
-          <img src="./res/github-export.png">
-          <a href="https://github.com/banhmikepxucxich/">Github</a>
-        </li>
+            margin-top: 2vh;
+            margin-bottom: -2vh;
+        }
 
-      </section>
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .inline {
+            display: flex;
+        }
+
+        .border {
+            border-bottom: #293241 1px solid;
+        }
+
+        .border-ver {
+            border-left: #293241 1px solid;
+            margin-left: 5vh;
+            margin-right: 5vh;
+        }
+
+        .handwriting {
+            font-family: 'Indie Flower', sans-serif;
+            font-size: 125%;
+        }
+
+        .accent {
+            color: #EE6C4D;
+        }
+
+        .link {
+            color: #3D5A80;
+            text-decoration: none;
+        }
+
+        .container {
+            background-color: white;
+
+            border: #293241 1px solid;
+            border-radius: 5px;
+
+            width: fit-content;
+            height: fit-content;
+
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            position: absolute;
+            top: 50%;
+            transform: translate(0px, -50%);
+        }
+
+        .section {
+            margin-top: 2vh;
+            margin-bottom: 5vh;
+        }
+
+        .icon {
+            font-size: 125%;
+        }
+
+        .img-container {
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section>
+            <h1>Henlo, I am <span class="handwriting accent">hawoi</span>,</h1>
+            <h2 class="handwriting">and I have absolutely no idea what the hell I am gettting myself into.</h2>
+        </section>
+
+        <div class="border"></div>
+
+        <section class="inline">
+
+            <div align="left" class="section">
+                <h1 class="accent">About me</h1>
+                <h3 class="handwriting">classic section</h3>
+                I code shit and build random stuff in Roblox Studio. <br>
+                Currently making kids mad in Minecraft a.k.a block game. <br>
+                Computer and pets enthusiast, Studio Ghibli fan. <br>
+                I do pixel art, and yes, I'm a student.
+            </div>
+
+            <div class="border-ver"></div>
+
+            <div align="left" class="section">
+                <h1 class="accent">Programming Languages I speak</h1>
+                <h3 class="handwriting">not 'speak', but code in</h3>
+
+                <li class="handwriting">Python</li>
+                <li class="handwriting">Lua</li>
+            </div>
+
+        </section>
+
+        <div class="border"></div>
+
+        <section class="inline">
+
+            <div align="left" class="section img-container">
+                <h1 class="accent">Photo</h1>
+                <h3 class="handwriting">oh yes</h3>
+                <img src="./hawoi.jpeg" alt="literally me">
+            </div>
+
+            <div class="border-ver"></div>
+
+            <div align="left" class="section">
+                <h1 class="accent">Still learning</h1>
+                <h3 class="handwriting">yes I am dumb</h3>
+
+                <li class="handwriting">Kotlin</li>
+                <li class="handwriting">Golang</li>
+            </div>
+
+            <div class="border-ver"></div>
+
+            <div align="left" class="section">
+                <h1 class="accent">Socials & more</h1>
+                <h3 class="handwriting">discord & github woo</h3>
+
+                <li class="handwriting">
+                    <i class="fa-brands fa-discord"></i> 
+                    hawoi#0593
+                </li>
+
+                <li class="handwriting link">
+                    <i class="fa-brands fa-github"></i> 
+                    <a href="https://github.com/banhmikepxucxich/" class="link">banhmikepxucxich</a>
+                </li>
+            </div>
+
+            <div class="border-ver"></div>
+
+            <div align="left" class="section">
+                <h1 class="accent">Projects</h1>
+                <h3 class="handwriting">a.k.a the shit I made</h3>
+
+                <li class="link">
+                    <i class="fa-brands fa-css3"></i>
+                    <i class="fa-brands fa-html5"></i>
+                    <a href="https://github.com/banhmikepxucxich/banhmikepxucxich.github.io" class="handwriting link">Website</a>
+                </li>
+
+                <li class="link">
+                    <i class="fa-brands fa-python"></i>
+                    <i class="fa-brands fa-css3"></i>
+                    <a href="https://github.com/banhmikepxucxich/code-presenter" class="handwriting link">Code Presenter</a>
+                </li>
+
+                <li class="link">
+                    <i class="fa-brands fa-css3"></i>
+                    <i class="fa-brands fa-html5"></i>
+                    <a href="https://github.com/banhmikepxucxich/banhmikepxucxich.github.io" class="handwriting link">Website</a>
+                </li>
+            </div>
+
+        </section>
 
     </div>
 
-  </body>
+</body>

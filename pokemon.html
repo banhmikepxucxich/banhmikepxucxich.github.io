@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+  <title>Pokemon!!!</title>
+  <script src="https://unpkg.com/vue@next" defer></script>
+  <link rel="stylesheet" href="pokemon.css" />
+  <script src="pokemon.js" defer></script>
+</head>
+<body>
+  <div class="flex container">
+    <div>
+      <div class="small-container">
+        <h3>Pikachu</h3>
+      </div>
+      <img
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+      />
+    </div>
+    <div>
+      <div class="small-container stat-box">
+        <h3>Base Stats</h3>
+        <table>
+          <tr>
+            <td>HP</td>
+            <td class="td-bar">
+              <div class="bar" style="width: 3.5rem"></div>
+            </td>
+            <td><span class="stat-number">35</span></td>
+          </tr>
+          <tr>
+            <td>ATTACK</td>
+            <td class="td-bar">
+              <div class="bar" style="width: 5.5rem"></div>
+            </td>
+            <td><span class="stat-number">55</span></td>
+          </tr>
+          <tr>
+            <td>DEFENSE</td>
+            <td class="td-bar"><div class="bar" style="width: 4rem"></div></td>
+            <td><span class="stat-number">40</span></td>
+          </tr>
+          <tr>
+            <td>SPECIAL ATTACK</td>
+            <td class="td-bar"><div class="bar" style="width: 5rem"></div></td>
+            <td><span class="stat-number">50</span></td>
+          </tr>
+          <tr>
+            <td>SPECIAL DEFENSE</td>
+            <td class="td-bar"><div class="bar" style="width: 5rem"></div></td>
+            <td><span class="stat-number">50</span></td>
+          </tr>
+          <tr>
+            <td>SPEED</td>
+            <td class="td-bar"><div class="bar" style="width: 9rem"></div></td>
+            <td><span class="stat-number">90</span></td>
+          </tr>
+          <tr>
+            <td>TOTAL</td>
+            <td></td>
+            <td>&nbsp;320</td>
+          </tr>
+        </table>
+      </div>
+      <div class="flex">
+        <div class="small-container box">
+          <h3>Abilities</h3>
+          <span>Static</span>
+          <h3>Hidden Abilities</h3>
+          <span>Lightning Rod</span>
+        </div>
+        <div class="small-container box">
+          <h3>Types</h3>
+          <div class="electric">ELECTRIC</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

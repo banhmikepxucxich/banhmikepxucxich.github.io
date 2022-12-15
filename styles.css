@@ -27,6 +27,7 @@ h1 {
 h2 {
   font-family: 'Press Start 2P', monospace;
   margin-bottom: -0.1rem;
+  margin-top: 1rem;
   font-size: 2rem;
 }
 
@@ -57,7 +58,14 @@ a {
   transition: transform 0.3s;
 }
 
-a:hover {
+.link {
+  display: inline-block;
+  color: rgb(159, 185, 159);
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.link:hover {
   transform: translateX(2rem);
   transition: transform 0.3s;
 }

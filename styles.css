@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&display=swap');
+
+.center {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.bg-filter {
+  opacity: 0.8;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -100;
+  backdrop-filter: blur(20px);
+}
+
+h1 {
+  font-family: 'Press Start 2P', monospace;
+  margin-bottom: -0.1rem;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: 'Press Start 2P', monospace;
+  margin-bottom: -0.1rem;
+  font-size: 2rem;
+}
+
+div,
+span,
+p {
+  font-family: 'Silkscreen', monospace;
+  font-size: 2rem;
+}
+
+body {
+  background-image: repeating-linear-gradient(
+      to bottom,
+      #416a23cc,
+      #2f4d19cc 50%,
+      #2f4d19cc 50%,
+      #416a23cc
+    ),
+    url('https://i.pinimg.com/originals/5a/93/4e/5a934e84f67d2a61a118ec95b1d6cb74.gif');
+  background-color: gray;
+  color: rgb(159, 185, 159);
+}
+
+a {
+  display: inline-block;
+  color: rgb(159, 185, 159);
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+a:hover {
+  transform: translateX(2rem);
+  transition: transform 0.3s;
+}
+
+/*
+https://www.30secondsofcode.org/css/s/hover-underline-animation
+underline animation here lmao ^
+*/
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: rgb(159, 185, 159);
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(159, 185, 159);
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
